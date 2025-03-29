@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo1.png'
+import logo from '../assets/logo1.webp'
 
 function Logo({ width = "200px" }) {
   return (
