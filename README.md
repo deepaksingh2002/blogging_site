@@ -20,48 +20,7 @@ Welcome to the **Blogging Site** repository! This is a full-featured web applica
 | Versioning  | Git & GitHub                       |
 
 
-## 🧑‍💻 Getting Started
 
-Follow these steps to set up the project locally:
-
-### ✅ Prerequisites
-
-- Node.js and npm installed
-- [React.js]
-- [Appwrite]
-
-### 📦 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/deepaksingh2002/blogging_site.git
-cd blogging_site
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
-Make sure to configure your Appwrite project settings (API endpoint, project ID, database collections, etc.) in an `.env` file.
-
-## 🔐 Appwrite Setup
-
-1. Create a new project in your Appwrite instance.
-2. Enable authentication and set up email/password provider.
-3. Create a collection for blog posts with relevant fields (e.g., title, content, user ID, timestamps).
-4. Update your project `.env` with Appwrite credentials.
-
-## 🙌 Contributing
-
-Contributions are welcome! Feel free to submit a pull request or open an issue to improve this project.
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m "Add feature"`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a Pull Request
 
 ## 📄 License
 
