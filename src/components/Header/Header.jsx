@@ -37,19 +37,19 @@ function Header() {
   ]
 
   return (
-    <header className='py-4 shadow bg-slate-500 fixed w-screen '>
+    <header className='py-4 shadow bg-primary text-white w-full z-50 '>
       <Contaner>
-        <nav className='flex'>
+        <nav className='flex flex-col sm:flex-row items-center justify-between gap-4'>
           <div className='mr-4'>
             <Link to='/'>
               <Logo width='50px' />
             </Link>
           </div>
-          <ul className='flex ml-auto'>
+          <ul className='flex flex-col sm:flex-row items-center gap-3'>
             {navItems.map((item) => item.active ? (
               <li key={item.name}>
                 <button onClick={() => navigate(item.slug)} 
-                  className='inline-block font-bold px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'>
+                  className='inline-block mx-3 font-bold px-6 py-2 duration-200  bg-accent text-white hover:bg-primary rounded-full'>
                   {item.name}
                 </button>
               </li>

@@ -12,9 +12,9 @@ function AllPosts() {
   return (
     <div className='w-full py-8' >
         <Contaner>
-            <div className='flex flex-wrap'>
+            <div className='flex flex-wrap -mx-2'>
                 {posts.map((post) => (
-                    <div className='p-2 w-1/4' key={posts.$id} > 
+                    <div className='w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2' key={posts.$id} > 
                     <PostCard {...post} />
                     </div>
                 ))}

@@ -34,11 +34,11 @@ export default function Post(){
   return post ? (
     <div className='py-8 bg-slate-300'>
         <Contaner>
-            <div className='w-full flex justify-center abslute  my-4 p-2 rounded-xl '>
+            <div className='aspect-[16/9] overflow-hidden rounded-xl '>
                 <img 
                  src={service.getFilePreview(post.featuredImage)}
                  alt={post.title}
-                 className='rounded-xl' />
+                 className='w-full h-64 md:h-80 lg:h-[28rem] object-cover rounded-2xl shadow' />
 
                  {isAuthor && (
                  <div className='abslute top-6 right-6'>
@@ -57,9 +57,9 @@ export default function Post(){
                  )}
             </div>
             <div className='w-full mb-6'>
-                 <h1 className='text-2xl font-bold'>{post.title}</h1>
+                 <h1 className='text-2xl font-bold text-primary'>{post.title}</h1>
             </div>
-            <div className='browser-css'>
+            <div className=' text-subtext '>
                 {parse(post.content)}
             </div>
         </Contaner>
