@@ -1,18 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{html,js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#FF6B6B',       // Coral Red (for header, highlights)
-        accent: '#4ECDC4',        // Tropical Blue (for buttons, CTA)
-        background: '#F7FFF7',    // Soft White (main site background)
-        text: '#1A1A1A',          // Rich Black (main text)
-        subtext: '#555555',       // Gray (for descriptions, muted text)
-        white: '#FFFFFF',         // For cards/sections
+        primary: '#F26A1B',       // Vibrant Orange
+        secondary: '#3DAEF2',     // Sky Blue
+        accent: '#48B87C',        // Leaf Green
+        warning: '#E95454',       // Soft Red
+        dark: '#1A1A2E',          // Dark Navy
+        light: '#F9F9F9',         // Light Gray
+        background: '#FFFFFF',    // White
+        aqua: '#4BC4C0',          // Deep Aqua
+        beige: '#F4EDE5',         // Muted Beige
       },
     },
   },

@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import auth from "./auth";
-import Post from "../pages/Post";
+
 
 export const store = configureStore({
     reducer: {
