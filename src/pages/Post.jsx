@@ -32,43 +32,45 @@ export default function Post(){
     };
 
   return post ? (
-      <div className="py-10 bg-light text-dark relative">
-        <Contaner>
-          
-          {/* Image Section */}
-          <div className="relative rounded-2xl overflow-hidden shadow-xl mb-10">
-            <img
-              src={service.getFilePreview(post.featuredImage)}
-              alt={post.title}
-              className="absolute top-0 right-0 w-1/2 h-[30%] object-cover rounded-bl-2xl"
-            />
-
-            {/* Edit/Delete Buttons */}
-            {isAuthor && (
-              <div className="absolute top-5 right-5 flex gap-3 z-10">
-                <Link to={`/edit-post/${post.$id}`}>
-                  <Button bgColor="bg-primary" className="text-white shadow">
-                    Edit
-                  </Button>
-                </Link>
-                <Button bgColor="bg-red-500" onClick={deletePost} className="text-white shadow">
-                  Delete
-                </Button>
-              </div>
-            )}
+    <div className="py-10 bg-light text-dark">
+    <Contaner>
+      
+      {/* Image Section */}
+      <div className="relative rounded-2xl overflow-hidden shadow-xl mb-10 aspect-[16/9]">
+      <img
+        src={service.getFilePreview(post.featuredImage)}
+        alt={post.title}
+        className="absolute top-[10vw] right-0 w-1/2 h-[30%] object-cover rounded-bl-2xl"
+      />
+  
+        {/* Edit/Delete Buttons */}
+        {isAuthor && (
+          <div className="absolute top-5 right-5 flex gap-3 z-10">
+            <Link to={`/edit-post/${post.$id}`}>
+              <Button bgColor="bg-primary" className="text-white shadow">
+                Edit
+              </Button>
+            </Link>
+            <Button bgColor="bg-red-500" onClick={deletePost} className="text-white shadow">
+              Delete
+            </Button>
           </div>
-
-          <div className="mb-6">
-            <h1 className="text-3xl font-bold text-primary leading-tight">{post.title}</h1>
-          </div>
-
-          <div className="text-subtext text-lg leading-relaxed space-y-4">
-            {parse(post.content)}
-          </div>
-
-        </Contaner>
+        )}
       </div>
-
+  
+      {/* Title */}
+      <div className="mb-6">
+        <h1 className="text-3xl font-bold text-primary leading-tight">{post.title}</h1>
+      </div>
+  
+      {/* Content */}
+      <div className="text-subtext text-lg leading-relaxed space-y-4">
+        {parse(post.content)}
+      </div>
+  
+    </Contaner>
+  </div>
+  
   ) : null;
 }
 
