@@ -35,15 +35,13 @@ export default function Post(){
     <div className="py-10 bg-light text-dark">
     <Contaner>
       
-      {/* Image Section */}
-      <div className="relative rounded-2xl overflow-hidden shadow-xl mb-10 aspect-[16/9]">
+      <div className="relative w-[95%] h-[20vh] sm:h-[50vh] max-w-full sm:max-w-screen-lg mx-auto rounded-2xl overflow-hidden shadow-xl mb-10">
       <img
         src={service.getFileView(post.featuredImage)}
         alt={post.title}
-        className="absolute top-[10vw] right-0 w-1/2 h-[30%] object-cover rounded-bl-2xl"
+        className="w-full h-full sm:object-cover object-center"
       />
   
-        {/* Edit/Delete Buttons */}
         {isAuthor && (
           <div className="absolute top-5 right-5 flex gap-3 z-10">
             <Link to={`/edit-post/${post.$id}`}>
@@ -58,12 +56,10 @@ export default function Post(){
         )}
       </div>
   
-      {/* Title */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-primary leading-tight">{post.title}</h1>
       </div>
   
-      {/* Content */}
       <div className="text-subtext text-lg leading-relaxed space-y-4">
         {parse(post.content)}
       </div>
