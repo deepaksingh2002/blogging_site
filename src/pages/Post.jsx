@@ -38,7 +38,7 @@ export default function Post(){
       {/* Image Section */}
       <div className="relative rounded-2xl overflow-hidden shadow-xl mb-10 aspect-[16/9]">
       <img
-        src={service.getFilePreview(post.featuredImage)}
+        src={service.getFileView(post.featuredImage)}
         alt={post.title}
         className="absolute top-[10vw] right-0 w-1/2 h-[30%] object-cover rounded-bl-2xl"
       />

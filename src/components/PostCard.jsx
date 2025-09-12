@@ -8,7 +8,7 @@ function PostCard({$id, title, featuredImage}) {
         <div className="bg-beige p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 h-full">          
           <div className="w-full mb-4 overflow-hidden rounded-xl aspect-[4/3]">
             <img
-              src={service.getFilePreview(featuredImage)}
+              src={service.getFileView(featuredImage)}
               alt={title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
