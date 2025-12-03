@@ -27,7 +27,7 @@ function Header() {
   {
       name: "All Posts",
       slug: "/all-post",
-      active: authStatus,
+      active: true,
   },
   {
       name: "Add Post",

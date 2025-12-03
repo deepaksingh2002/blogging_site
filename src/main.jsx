@@ -41,12 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/all-post",
-        element: (
-        <AuthLayout authentication>
-            {" "}
-            <AllPosts />
-        </AuthLayout>
-        ),
+        element:<AllPosts />
       },
       {
         path:"/add-post",
